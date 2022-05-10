@@ -23,7 +23,7 @@ tiles.setCurrentTilemap(tilemap`level1`)
 player2.setVelocity(30, -50)
 scene.cameraFollowSprite(player2)
 tiles.placeOnRandomTile(player2, assets.tile`myTile4`)
-game.onUpdateInterval(500, function () {
+game.onUpdateInterval(100, function () {
     if (controller.A.isPressed()) {
         player2.setVelocity(60, 100)
     } else {
